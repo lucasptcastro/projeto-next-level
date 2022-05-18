@@ -1,13 +1,17 @@
 *{
-    margin:0;
+    margin:0; /* Define todas margens (top, right, left, bottom) como 0 */
     box-sizing: border-box;
 }
 
 :root {
 
     --primary-color: hsl(170, 100%, 26%); /* Variável com uma cor definida */
-    --tittle-color: hsl(210, 11%, 15%);
+    --headline: hsl(210, 11%, 15%);
     --paragraph-color: hsl(210, 9%, 31%);
+
+    --brand-beige: hsl(39, 100%, 97%);
+    --brande-green-light: hsl(148, 23%, 89%)
+
 
     font-size: 62.5%; /* 1rem = 10px */
 }
@@ -28,7 +32,7 @@ header {
 
 h1{
     font-size: 3.4rem;
-    color: var(--tittle-color);
+    color: var(--headline);
     line-height: 130%;
     margin-bottom: 2.4rem;
 }
@@ -70,4 +74,38 @@ button{
     justify-content: center;
     gap: 1.6rem;
     
+}
+
+.stats{
+    width: 32.7rem;
+    
+    padding-block: 4rem; /* Tem a funcao do padding-top e paddint-bottom juntas */
+    
+    margin-inline: auto; /* Deixa a margem direita e esquerda como automática. Bom pra centralizar */
+    
+    background-color: var(--brand-beige);
+    border: 1px solid var(--brande-green-light);
+    border-radius: 0.6rem;
+    
+    display: flex; /* Deixa o conteúdo alinhado um ao lado do outro como linha */
+    flex-direction: column; /* Alinha o flex em colunas */
+    justify-content: center;
+    gap: 6rem; /* Faz uma separação entre os elementos */
+}
+
+.stat h3{
+    font-size: 4.8rem;
+    color: var(--headline);
+    line-height: 130%;
+
+    margin-bottom: 0.4rem;
+}
+
+.stat p{
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    line-height: 150%;
+
+
 }
